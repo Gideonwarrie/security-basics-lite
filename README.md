@@ -27,6 +27,7 @@ A small WordPress plugin that applies a few common hardening steps. Written in P
 - Disabling XML-RPC can break apps that depend on it.
 - Author archive pages at `/author/username/` can still reveal usernames.
 - If a host or caching plugin serves saved copies of pages, WordPress's PHP never runs for them, so the headers will not appear on those pages. Some hosts also set their own `Referrer-Policy`, which can take precedence over this plugin's value.
+-  The XML-RPC block was not independently verified on the InfinityFree test site, where requests to `xmlrpc.php` returned an empty response.
 - This is a learning project, not a replacement for a full security plugin.
 
 ## License
